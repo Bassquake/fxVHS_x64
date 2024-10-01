@@ -1,0 +1,137 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FXVHS_CONFIG DIALOGEX 0, 0, 212, 143
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "flaXen's VHS Filter v1.0"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Enable Stabilizer",IDC_ST_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,11,67,8
+    EDITTEXT        IDC_ST_LUMA,65,20,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ST_CHROMA,65,33,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ST_ERROR,65,46,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ST_BIAS,65,59,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CS_H,45,89,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Neg.",IDC_CS_HNEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    72,91,29,8
+    EDITTEXT        IDC_CS_V,45,102,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Neg.",IDC_CS_VNEG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    72,104,30,9
+    CONTROL         "Shift Chroma I",IDC_CS_SHI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,116,58,8
+    CONTROL         "Shift Chroma Q",IDC_CS_SHQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,128,62,8
+    EDITTEXT        IDC_NR_THRESH,173,11,32,12,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NR_RADIUS,173,24,32,12,ES_AUTOHSCROLL
+    CONTROL         "Pre-filter",IDC_NR_PRE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,39,39,8
+    CONTROL         "Post-filter",IDC_NR_POST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,39,42,8
+    CONTROL         "Enable",IDC_SH_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,113,65,34,8
+    EDITTEXT        IDC_SH_EFFECT,173,63,31,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "8-Direction Filter",IDC_SH_8DIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,113,77,64,8
+    DEFPUSHBUTTON   "OK",IDOK,107,126,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,126,50,14
+    GROUPBOX        " Noise Reduction ",IDC_STATIC,107,0,102,51
+    RTEXT           "Threshold:",IDC_STATIC,139,13,34,8
+    RTEXT           "Pixel Radius:",IDC_STATIC,131,26,42,8
+    GROUPBOX        " Sharpen ",IDC_STATIC,107,52,102,38
+    RTEXT           "Effect:",IDC_STATIC,149,65,22,8
+    GROUPBOX        " Chroma Shifting ",IDC_STATIC,2,77,102,64
+    RTEXT           "Horizontal:",IDC_STATIC,6,91,36,8
+    RTEXT           "Vertical:",IDC_STATIC,7,104,35,8
+    GROUPBOX        " Stabilize ",IDC_STATIC,2,0,102,76
+    RTEXT           "Luma Threshold:",IDC_STATIC,9,22,54,8
+    RTEXT           "Chroma Threshold:",IDC_STATIC,3,35,60,8
+    RTEXT           "Temporal Error:",IDC_STATIC,15,47,48,8
+    RTEXT           "Temporal Bias:",IDC_STATIC,15,61,48,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FXVHS_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 209
+        BOTTOMMARGIN, 140
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

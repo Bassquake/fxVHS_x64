@@ -1,0 +1,279 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win98; U) [Netscape]">
+   <title>flaXen VHS Noise Reduction Filter for VirtualDub</title>
+</head><body bgcolor="#FFFFCF">
+
+<BR><center><table border = 1 cellspacing = 0 cellpadding = 10><tr><td align = center>
+<font size = 6><B>flaXen VHS Noise Reduction Filter for VirtualDub</B></font><BR>
+<font size = 5>Help File - Covers fxVHS v1.0</font><BR>
+<font size = 1>Last revision: 25-Jul-00<BR>(c) 2000 Dan Flower (flaXen / X-Bios)</center></font></td></tr></table></center>
+<BR><BR>
+
+<BR><HR><font size = 6><center>Index</center></font><HR><BR>
+<center><table rows = 4 cols = 2 border = 0 width = 60% cellspacing = 10>
+<tr><td align = right width = 40%><A HREF="help.html#disclaimer">Disclaimer</A></td><td>Legal disclaimer -- It's not my fault!</td></tr>
+<tr><td align = right><A HREF="help.html#intro">Introduction</A></td><td>An introduction to fxVHS</td></tr>
+<tr><td align = right><A HREF="help.html#features">Features</A></td><td>fxVHS's massive feature list</td></tr>
+<tr><td align = right><A HREF="help.html#contact">Contact Info</A></td><td>My Contact info (email &amp; web page)</td></tr>
+<tr><td align = right><A HREF="help.html#parameters">Parameters</A></td><td>Definitions for all fxVHS Parameters</td></tr>
+<tr><td align = right><A HREF="help.html#stabilize">Stabilizer</A></td><td>Using the Stabilizer</td></tr>
+<tr><td align = right><A HREF="help.html#chromashift">Chroma Shift</A></td><td>Using the Chroma Shifter</td></tr>
+<tr><td align = right><A HREF="help.html#denoise">Noise Reduction</A></td><td>Using the Noise Reducer</td></tr>
+<tr><td align = right><A HREF="help.html#sharpen">Sharpen</A></td><td>Using the Sharpener</td></tr>
+<tr><td align = right><A HREF="help.html#tips">Usage Tips</A></td><td>Using the features of fxVHS</td></tr>
+<tr><td align = right><A HREF="help.html#adjstabilize">Using the Stabilizer</A></td><td>Adjusting the Stabilizer</td></tr>
+<tr><td align = right><A HREF="help.html#adjchromashift">Using the Chroma Shifter</A></td><td>Adjusting the Chroma Shifter</td></tr>
+<tr><td align = right><A HREF="help.html#adjdenoise">Using the Noise Reducer</A></td><td>Adjusting the Noise Reducer</td></tr>
+<tr><td align = right><A HREF="help.html#adjsharpen">Using the Sharpener</A></td><td>Adjusting the Sharpener</td></tr>
+</table></center><BR><BR>
+
+<A NAME="disclaimer">
+<BR><HR><font size = 6><center>Disclaimer</font></center><HR><BR>
+&nbsp; &nbsp; &nbsp; This software is distributed free of charge and is therefore provided "as is" without 
+warranty of any kind, either expressed or implied, including but not limited to, the implied warranty of 
+Merchantability or Fitness For a Particular Purpose. Under no conditions does the Author take responsibility 
+for the results of using this software, direct or indirect, including but not limited to, Damage to Other 
+Software or Hardware Components or Data of Any Type.<BR><BR>
+
+&nbsp; &nbsp; &nbsp; That being said, I'm fairly certain this filter won't blow your computer up, but that's 
+what the disclaimer is there for. ;)<BR><BR>
+
+<A NAME="intro">
+<BR><HR><font size = 6><center>Introduction</font></center><HR><BR>
+&nbsp; &nbsp; &nbsp; This filter (hereafter fxVHS) was designed to clean-up VHS captures with its primary 
+feature: (get ready for this) a self-correcting temporal accumulation buffer. You're probably scratching your 
+head right about now... All this means is that it can correct small color and intensity deviations in a video 
+signal based on information gathered from previous frames and the current frame. In other words, fxVHS can 
+reduce noise, fix abrupt color bands that appear (for example, purple bands where it should be red), and 
+correct color moiré patterns that sometimes show up near lines and edges. This filter can be used to clean-up 
+video from any source but was designed for VHS. Sometimes, for example, poor transfers from aged Betamax 
+(a production-level tape format) to DVD will show color moiré's and this filter will help correct them.<BR><BR>
+
+&nbsp; &nbsp; &nbsp; fxVHS operates in the YIQ colorspace for most of its functions. fxVHS uses greater precision 
+in its colorspace translation tables for speed optimization and quality reasons. Which brings me to memory 
+requirements. fxVHS uses 12 frame buffers and 19 lookup tables. This consumes a very large amount of memory, about 
+3.71mb for 320x240 and about 14.77mb for 640x480. Try keeping the resolutions down to preserve memory.<BR><BR>
+
+&nbsp; &nbsp; &nbsp; After preliminary testing, I found that this filter was extremely useful and should be shared 
+with others, so here it is. Remember, this filter doesn't perform miracles, but it can come close. Below is a 
+lengthy (and quite informative) guide to fxVHS.<BR><BR>
+
+<A NAME="features">
+<BR><HR><font size = 6><center>Features of fxVHS</font></center><HR><BR>
+<ul><li><B>Temporal Stabilizing:</B> The temporal accumulation buffer! This corrects small deviations or 
+imperfections in a video source by comparing each pixel to one its stored in its accumulation buffer. These 
+deviations include static or other noise, chromatic moiré's, and some jitter.</li></ul>
+
+<ul><li><B>Spatial Noise Reduction:</B> It is possible to eliminate most noise by using a spatial (or 
+frame-independent) noise reduction algorithm. This can be applied before and after the Stabilizer.</li></ul>
+
+<ul><li><B>Chroma Shifting:</B> Correct the frequently seen problem of offset chroma components with speed and ease.</li></ul>
+
+<ul><li><B>Sharpening:</B> Enhance edge contrast for sharper edges and crisper images.</li></ul>
+
+<ul><li><B>Speed:</B> Speed was the focus of this filter without sacrificing quality. I use high-precision math with 
+look-up tables and a lot of assembler for the best speed and quality combination! Of course, not everything can be 
+done lightning-fast.</li></ul>
+
+<ul><li><B>Memory Hog:</B> That's right... This filter is a memory hog the likes of which I've never seen before. ;)</li></ul><BR>
+
+<A NAME="contact">
+<BR><HR><font size = 6><center>Contact Info</center></font><HR><BR>
+&nbsp; &nbsp; &nbsp; Want to email me? You can do that! My email address is: <A HREF="mailto:x_bios@hotmail.com">x_bios@hotmail.com</A><BR>
+&nbsp; &nbsp; &nbsp; Homepage?! I don't need no stink'n homepage! Wait! Ya I do: <A HREF="http://flaxen.dynip.com/vdf/index.html">http://flaxen.dynip.com/vdf</A><BR><BR>
+
+&nbsp; &nbsp; &nbsp; On my VirtualDub filter homepage, you can find example video clips, other video filters of mine, 
+and maybe even the number "4"...<BR><BR><BR>
+
+<A NAME="parameters">
+<BR><HR><font size = 6><center>Definition of fxVHS Parameters</font><HR><BR><img src = "fxvhs1.jpg"><BR><BR>
+<A NAME="stabilize">
+<BR><HR><font size = 6>Properties of the Stabilize Section</font></center><HR><BR>
+
+&nbsp; &nbsp; &nbsp; The color stabilizer portion of fxVHS requires these five parameters: Enable, Luma Threshold, 
+Chroma Threshold, Temporal Error (Threshold), and Temporal Bias. Lets go over each one, but first, I'll explain 
+what Luma and Chroma are. When a video signal is transmitted over an analog medium (VHS tape, radio waves, coax 
+cables), it's usually converted from the original RGB format to YIQ. Why do this? Signal bandwidth on these mediums 
+can be limited and RGB wouldn't look that good if it were transmitted directly. The human eye is much more sensitive 
+to intensity (Luma / Y) of light and less sensitive to its color (Chroma / I and Q). So by giving the Luma signal 
+more bandwidth (thusly more accuracy and definition), you can drop the Chroma bandwidth without the viewer noticing. 
+Since this can't be done to RGB, it's converted to a format that it can be done to; usually YIQ or other CIE formats 
+(like YUV).<BR><BR>
+
+<B>Enable Stabilizer</B><BR>
+&nbsp; &nbsp; &nbsp; This simply enables the color stabilizing function of fxVHS. You may disable it and use the 
+filter to eliminate noise and sharpen spatially.<BR><BR>
+
+<B>Luma Threshold</B><BR>
+&nbsp; &nbsp; &nbsp; Since the human eye is more sensitive to changes in Luminance, a lower value should be placed 
+here so that large changes in Luminance are handled properly. Setting this value too low will cause the routine to 
+keep the current sample instead of dumping it (which is partially how noise is reduced). The result will be little 
+to no change in the picture quality at all. This value should be just high enough to sense static. I recommend 
+between 4 (clear signal) and 16 (poor quality signal).<BR><BR>
+
+<B>Chroma Threshold</B><BR>
+&nbsp; &nbsp; &nbsp; A larger value can be placed here since the human eye is less sensitive to changes in 
+Chrominance. This value should range from about 15 (clear signal) to as high as 35 (poor quality signal). If it's 
+too low, it won't eliminate much (if any) noise. If it's too high, colors will appear to smear or leave 
+"left-overs" as they move around (like when panning).<BR><BR>
+
+<B>Temporal Error</B><BR>
+&nbsp; &nbsp; &nbsp; "Ok... I get the rest, but what's with this thing?!"<BR>
+&nbsp; &nbsp; &nbsp; Temporal Error is the name I've coined for when a color has fallen within its thresholds but 
+is still slightly out of place (after movement for example). I first noticed this effect when I saw an animated 
+character move its head and the color of the hair stayed in place as the head turned. It left an ugly mark on its 
+face and the only solution was to lower the thresholds. Unfortunately, by doing that I was no longer filtering out 
+the noise I wanted to filter out. Temporal Error Detection was my next discovery. The way it works is: if, over a 
+period of time, the difference between the accumulated color (stabilized color) and the actual on-screen color 
+exceeds the Temporal Error threshold, the new color is placed on the screen. The higher this value is, the longer 
+it takes for these errors to be corrected. To disable this feature (since it's not ALWAYS required), just plug in 
+a really large number (like 1000000).<BR><BR>
+
+<B>Temporal Bias</B><BR>
+&nbsp; &nbsp; &nbsp; The purpose of the Temporal Bias adjustment is to create a threshold in which very small 
+deviations in the picture do not affect Temporal Error detection. Without this control, static and small deviations 
+inherent in analog media could quickly add up and cause a Temporal Error to occur. Keep this value low, but not too 
+low. If it's too low, the small amount of noise in the video signal will add up and cause a Temporal Error and the 
+static will show on-screen. If the value is too high, Temporal Errors won't occur when they need to and "left-overs" 
+will become visible.<BR><BR>
+
+<A NAME="chromashift">
+<BR><HR><font size = 6><center>Properties of the Chroma Shifting Section</font></center><HR><BR>
+
+&nbsp; &nbsp; &nbsp; Chroma Shift is a common problem with analog sources. The effect of Chroma Shift is visible 
+near edges within the picture. For example, the yellow color of the text of a subtitle appears to be offset from 
+the actual text leaving a section of each character gray (or off-colored). Sometimes it is just one of the two 
+chroma channels that gets offset. For example, a white line or box on the screen shows a red band on the left side 
+and a blue band on the right side. This portion of the filter allows you to adjust for that. There is no automatic 
+way to find the offset, so you'll just have to experiment. Usually, the horizontal offset is wrong and it's usually 
+shifted right.<BR><BR>
+
+<B>Horizontal</B><BR>
+&nbsp; &nbsp; &nbsp; This is the horizontal offset to apply. The Neg box next to this field represents the sign of 
+the offset. When this checkbox is checked, the offset is negative. When unchecked, the offset is positive. Negative 
+offsets move the affected chroma left while positive offsets shift right.<BR><BR>
+
+<B>Vertical</B><BR>
+&nbsp; &nbsp; &nbsp; This is exactly the same as the Horizontal offset, except it applies to the vertical axis of the 
+picture. It is my observation that vertical offset is rare. The picture is composed of "scanlines" which have a 
+defined vertical resolution (480 for NTSC) but the horizontal resolution of these scanlines is undefined. This means 
+that horizontal offsets are more common because it is harder to shift vertically from scanline to scanline.<BR><BR>
+
+<B>Shift Chroma I</B> and <B>Shift Chroma Q</B><BR>
+&nbsp; &nbsp; &nbsp; When checked, the respective chroma channel(s) will be shifted. If either of these two checkboxes 
+is checked, then the filter is applied. If both are unchecked, the filter is not applied.<BR><BR>
+
+<A NAME="denoise">
+<BR><HR><font size = 6><center>Properties of the Noise Reduction Section</font></center><HR><BR>
+
+&nbsp; &nbsp; &nbsp; The Noise Reduction portion of fxVHS helps in a number of ways. The color stabilizer serves as a 
+noise reduction routine in and of itself, but it's a pixel-independent temporal method. These Noise Reduction routines 
+are spatial (based on surrounding pixels) rather than temporal (based on previously shown pixels). There are a couple 
+of options you have with these: Pre-Filter and Post-Filter. The Pre-Filter method will apply a spatial de-noise on the 
+source image before it reaches the color stabilizer. The advantage is that most high frequency noise can be eliminated 
+which helps keep the pixels under the Temporal Bias, which helps avoid Temporal Errors. The Post-Filter allows you to 
+do another spatial de-noise after the color stabilizer has run. This helps reduce the number of visible "left-overs" 
+from slow panning / motion by blending them with their surrounding pixels. Here are specifics on the parameters for 
+the Noise Reduction Threshold and Pixel Radius:<BR><BR>
+
+<B>Threshold</B><BR>
+&nbsp; &nbsp; &nbsp; The Threshold specifies a range where a pixel surrounding the current one will be included or 
+excluded based on its similarity to the current pixel. A value too low will allow noise to be excluded from the 
+de-noise routine and therefore show on-screen. A value too high will treat some non-noise as noise and eliminate it. 
+In other words, lines and edges may blur together.<BR><BR>
+
+<B>Pixel Radius</B><BR>
+&nbsp; &nbsp; &nbsp; The spatial noise reduction routine uses, by default, a 1-pixel sampling radius around the 
+current pixel thereby creating a 3x3 sample grid. Setting value to 2 would create a 5x5 sample grid. The larger the 
+grid, the smoother the noise reduction is. It will also slow the routine down quite a bit. With a good video signal, 
+1-pixel Radius is sufficient. Poor quality signals would best be cleaned up with up to a 4-pixel Radius.<BR><BR>
+
+<B>Pre-filter</B><BR>
+&nbsp; &nbsp; &nbsp; When enabled, the Noise Reduction routine will run before any other portion of the filter. This 
+will allow the input signal to be cleaned up before it runs thru the Stabilizer. Doing this can help reduce Temporal 
+Errors and produce an over-all cleaner picture.<BR><BR>
+
+<B>Post-filter</B><BR>
+&nbsp; &nbsp; &nbsp; After all filters are applied, but before the Sharpen portion of the filter is run, another Noise 
+Reduction pass can be performed. This can help reduce noise even further and may eliminate noise caused by Temporal 
+Errors. This processing does not affect the Stabilizer for the next frame.<BR><BR>
+
+<A NAME="sharpen">
+<BR><HR><font size = 6><center>Properties of the Sharpen Section</center></font><HR><BR>
+
+&nbsp; &nbsp; &nbsp; On many video capture cards, an option to "sharpen" the input signal (usually from a composite 
+source) is provided. This function can be emulated in software also and can produce a cleaner looking image. Be warned 
+that too much sharpening can allow noise to appear where it isn't desired. This routine is based on the common Unsharp 
+Mask method for sharpening images.<BR><BR>
+ 
+<B>Enable</B><BR>
+&nbsp; &nbsp; &nbsp; This simply enables this portion of the filter.<BR><BR>
+
+<B>Effect</B><BR>
+&nbsp; &nbsp; &nbsp; This allows you to specify exactly how much sharpening to do. The valid range is 1 to 100. Lower 
+settings apply less sharpening and higher settings apply more sharpening.<BR><BR>
+
+<B>8-Direction Filter</B><BR>
+&nbsp; &nbsp; &nbsp; This allows you to select a 5-pixel (unchecked) or 9-pixel (checked) sampling area. The 5-pixel 
+routine may look better and runs a little faster. The 9-pixel mode will show larger accents on the edges it enhances.<BR><BR>
+
+&nbsp; &nbsp; &nbsp; Once you've found what values work best for you, go ahead and process the entire video clip. So 
+how do you know you've found the best values? Here are some tips:<BR><BR>
+
+<A NAME="tips">
+<BR><HR><font size = 6><center>Tips on Tuning Your Settings</center></font><HR><BR>
+
+&nbsp; &nbsp; &nbsp; This section will help you adjust fxVHS settings for the best results. If you're hardcore bent 
+on maximum quality, you may want to add the TV filter included with VirtualDub to show you the Y / I / Q components 
+of the output from fxVHS. A note on the TV filter: It seems to have the I and Q channels mixed up. I took my RGB 
+&lt;-&gt; YIQ translation matrices from the CIE standards specifications. I don't know for sure who's correct in this 
+case, fxVHS or the TV filter.<BR><BR>
+
+<A NAME="adjstabilize">
+<B>Adjusting the Stabilizer:</B><BR>
+&nbsp; &nbsp; &nbsp; Load your video clip and add the fxVHS filter using the default values. Skip to several parts in 
+the clip where you might these: camera panning, moving objects (like people), and (if possible) cross-fades where one 
+scene fades into the next. Once you've found these scenes, you can step frame-by-frame thru them for several frames 
+while closely observing the output video. Look for any smearing (while panning), "left-overs" (moving objects), or lag 
+(cross-fades). If there are any of these effects that are visible enough to need correcting, try lowering the Temporal 
+Error and Bias values. If that doesn't work, try lowering the Chroma Threshold (and Luma if lower Chroma Threshold 
+don't help). Be sure not to set the Luma Threshold too low. For a clean source, sometimes these values are good: Luma 
+Threshold = 4, Chroma Threshold = 15, Temporal Error = 5, Temporal Bias = 3.<BR><BR>
+
+<A NAME="adjchromashift">
+<B>Adjusting Chroma Shift:</B><BR>
+&nbsp; &nbsp; &nbsp; This can be a difficult task. The first thing you need to identify is which direction the chroma 
+is offset. This can be done by observing sharp edges (best if there are sharp color contrasts). Once the approximate 
+offsets are known, go ahead and enable both the Shift Chroma I/Q checkboxes. Remember that if, for example, the chroma 
+is shifted right, you'll need to shift it left by checking the Horizontal Neg checkbox.<BR><BR>
+
+&nbsp; &nbsp; &nbsp; It is best if the Chroma Shifter is applied BEFORE you intend to resize the image. If you do add a 
+resize filter, add fxVHS before the resize and disable all of its features except the Chroma Shifter and apply your 
+settings there. After the resize filter, have another fxVHS run with the Chroma Shifting options disabled and all other 
+options enabled as desired. This will produce the best quality / speed ratio.<BR><BR>
+
+<A NAME="adjdenoise">
+<B>Adjusting the Noise Reduction Filter:</B><BR>
+&nbsp; &nbsp; &nbsp; This feature can be a little tricky. Pre-filtering usually produces the best results. The default 
+values usually work well enough. A note of warning: Higher radiuses usually need less sensitivity. I use a sensitivity 
+of 6 when I use a radius of 2. If the sensitivity and radius is too high, the image will look like it was painted, or 
+like a cartoon. It will eliminate subtle details you may have wanted to keep. On the flip-side, maybe that's what 
+you're after... If the signal is clean, you may not need a noise reduction filter at all. It is best to avoid the noise 
+reduction filter since it's the slowest part of fxVHS. Only use the Pre-filter and Post-filters if the source image is 
+very low quality.<BR><BR>
+
+<A NAME="adjsharpen">
+<B>Adjusting the Sharpen Filter:</B><BR>
+&nbsp; &nbsp; &nbsp; Sharpening isn't always a good thing. Edges are enhanced by adding the difference between the 
+current pixel and the current pixel that's been softened. The result of the Unsharp mask is higher contrast near edges. 
+Too much sharpening will make edges "glow" which looks really bad. I recommend that if you use this function, you keep 
+the value near or under 20 to 30.<BR><BR>
+
+<font size = 6><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+</body>
+</html>

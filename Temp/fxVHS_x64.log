@@ -1,0 +1,382 @@
+﻿Build started 01/10/2024 20:14:09.
+     1>Project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" on node 2 (Rebuild target(s)).
+     1>Building with tools version "15.0".
+       Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
+       Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Configuration=Release
+       Done executing task "Message".
+       Task "Message"
+         Platform=x64
+       Done executing task "Message".
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('.\x64\Release\' != '' and !HasTrailingSlash('.\x64\Release\')).
+       Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+       Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('.\Temp\' != '' and !HasTrailingSlash('.\Temp\')).
+       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( 'E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\obj\' != '' And 'E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\obj\' != 'E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\obj\' ).
+       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\obj\' ).
+     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "fxVHS_x64.vcxproj".
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.DesignTime.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Rebuild" depends on it):
+       Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
+       Task "SetEnv"
+         VSTEL_SolutionSessionID=
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_CurrentSolutionBuildID=
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         VSTEL_ProjectID={236B8419-4D27-4B00-B180-A2A2EAA0CADE}
+       Done executing task "SetEnv".
+     1>Done building target "SetTelemetryEnvironmentVariables" in project "fxVHS_x64.vcxproj".
+     1>Target "_PrepareForRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "_PrepareForRebuild" in project "fxVHS_x64.vcxproj".
+     1>Target "BeforeRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "BeforeRebuild" in project "fxVHS_x64.vcxproj".
+     1>Target "_PrepareForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Delete"
+         Deleting file ".\Temp\fxVHS_x64.tlog\fxVHS_x64.lastbuildstate".
+       Done executing task "Delete".
+     1>Done building target "_PrepareForClean" in project "fxVHS_x64.vcxproj".
+     1>Target "BeforeClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+     1>Done building target "BeforeClean" in project "fxVHS_x64.vcxproj".
+       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'library' != 'library') or
+                           ('' == '')) and
+                          Exists('obj\fxVHS_x64.vcxproj.UnmanagedRegistration.cache')).
+     1>Target "CoreClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+       Task "Delete"
+         File ".\Temp\\TempCA\fxVHS_x64.pdb" doesn't exist. Skipping.
+         File ".\Temp\\TempCA\fxVHS_x64.vdf" doesn't exist. Skipping.
+       Done executing task "Delete".
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindUnderPath"
+         Comparison path is ".\x64\Release\".
+       Done executing task "FindUnderPath".
+       Task "FindUnderPath"
+         Comparison path is ".\Temp\".
+       Done executing task "FindUnderPath".
+       Task "Delete"
+       Done executing task "Delete".
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "CoreClean" in project "fxVHS_x64.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareProjectReferences" depends on it):
+       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignProjectConfiguration"
+       Done executing task "AssignProjectConfiguration".
+     1>Done building target "AssignProjectConfiguration" in project "fxVHS_x64.vcxproj".
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareProjectReferences" depends on it):
+       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+     1>Done building target "_SplitProjectReferencesByFileExistence" in project "fxVHS_x64.vcxproj".
+     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareProjectReferences" depends on it):
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities->Count())' != '0' and '$(ReferringTargetFrameworkForProjectReferences)' != '') was evaluated as ('0' != '0' and '.NETFramework,Version=v4.0' != '').
+     1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "fxVHS_x64.vcxproj".
+     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "CleanReferencedProjects" depends on it):
+     1>Done building target "PrepareProjectReferences" in project "fxVHS_x64.vcxproj".
+     1>Target "CleanReferencedProjects" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
+     1>Done building target "CleanReferencedProjects" in project "fxVHS_x64.vcxproj".
+     1>Target "CleanPublishFolder" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+       Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('.\x64\Release\app.publish\'=='.\x64\Release\app.publish\' and Exists('.\x64\Release\app.publish\')).
+     1>Done building target "CleanPublishFolder" in project "fxVHS_x64.vcxproj".
+     1>Target "AfterClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+     1>Done building target "AfterClean" in project "fxVHS_x64.vcxproj".
+       Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
+     1>Target "BeforeCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "CppClean" depends on it):
+     1>Done building target "BeforeCppClean" in project "fxVHS_x64.vcxproj".
+     1>Target "CoreCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "CppClean" depends on it):
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Using "CppClean" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
+       Task "CppClean"
+       Done executing task "CppClean".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "CoreCppClean" in project "fxVHS_x64.vcxproj".
+     1>Target "AfterCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "CppClean" depends on it):
+     1>Done building target "AfterCppClean" in project "fxVHS_x64.vcxproj".
+     1>Target "PGInstrumentedClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "CppClean" depends on it):
+       Task "Delete"
+       Done executing task "Delete".
+     1>Done building target "PGInstrumentedClean" in project "fxVHS_x64.vcxproj".
+     1>Target "CppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Clean" depends on it):
+     1>Done building target "CppClean" in project "fxVHS_x64.vcxproj".
+     1>Target "Clean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Rebuild" depends on it):
+     1>Done building target "Clean" in project "fxVHS_x64.vcxproj".
+       Target "SetTelemetryEnvironmentVariables" skipped. Previously built successfully.
+     1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Build" depends on it):
+       Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+     1>Done building target "_PrepareForBuild" in project "fxVHS_x64.vcxproj".
+     1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveReferences" depends on it):
+       Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+     1>Done building target "_PrepareForReferenceResolution" in project "fxVHS_x64.vcxproj".
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp'!='' and 'false'=='true' and '' != 'false').
+     1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "fxVHS_x64.vcxproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
+       Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+     1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveReferences" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '15.0' != '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '15.0' == '10.0' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+       Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+     1>Done building target "ResolveProjectReferences" in project "fxVHS_x64.vcxproj".
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ResolveProjectReferences" skipped. Previously built successfully.
+       Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+     1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.NETFramework.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+     1>Done building target "GetFrameworkPaths" in project "fxVHS_x64.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+     1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+     1>Done building target "GetReferenceAssemblyPaths" in project "fxVHS_x64.vcxproj".
+     1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Current.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "SetEnv"
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;;C:\Users\Billy\AppData\Local\Programs\Python\Python310;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC;C:\ffmpeg-6.1-full_build\bin;c:\program files (x86)\common files\oracle\java\javapath;c:\programdata\oracle\java\javapath;c:\program files (x86)\common files\intel\shared libraries\redist\intel64\compiler;c:\program files (x86)\microsoft directx sdk (august 2007)\utilities\bin\x86;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\quicktime\qtsystem\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files (x86)\microsoft sql server\client sdk\odbc\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\dts\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\managementstudio\;c:\program files\microsoft\web platform installer\;c:\program files\dotnet\;c:\program files\openvpn\bin;c:\program files (x86)\microsoft sql server\140\tools\binn\;c:\program files (x86)\microsoft sql server\140\dts\binn\;c:\program files (x86)\microsoft sql server\140\tools\binn\managementstudio\;c:\windows\system32\openssh\;c:\users\billy\appdata\local\android\sdk\platform-tools;c:\program files\sourcegear\common\diffmerge\;c:\program files\oracle\virtualbox;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\Program Files\CMake\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Windows\system32;C:\Windows;C:\Users\Billy\.dotnet\tools;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIB=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\lib\x64;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x64;;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\UnitTest\lib;C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64;;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x64
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\atlmfc\lib\x64;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;
+       Done executing task "SetEnv".
+       Task "SetEnv"
+         INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\atlmfc\include;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\include;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt;;;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\VS\UnitTest\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;
+       Done executing task "SetEnv".
+     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "fxVHS_x64.vcxproj".
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+     1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetResolvedWinMD" in project "fxVHS_x64.vcxproj".
+     1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == '') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == '').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == 'v110').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v100') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == 'v100').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' == 'v90') was evaluated as (''!='true' and 'true' != 'true' and 'v141' == 'v90').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(_ToolsetFound)' != 'true' and '$(PlatformToolset)' != 'v90' and '$(PlatformToolset)' != 'v100' and '$(PlatformToolset)' != 'v110') was evaluated as (''!='true' and 'true' != 'true' and 'v141' != 'v90' and 'v141' != 'v100' and 'v141' != 'v110').
+     1>Done building target "PlatformPrepareForBuild" in project "fxVHS_x64.vcxproj".
+     1>Target "_CheckWindowsSDKInstalled" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKInstalled)' != 'true') was evaluated as ('true' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(WindowsAppContainer)' != 'true' and '$(WindowsSDK_Desktop_Support)' != true) was evaluated as ('false' != 'true' and 'true' != true).
+     1>Done building target "_CheckWindowsSDKInstalled" in project "fxVHS_x64.vcxproj".
+       Target "GetFrameworkPaths" skipped. Previously built successfully.
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
+     1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\VisualStudio\v15.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "PrepareForBuild" depends on it):
+       Task "SetEnv"
+         CAExcludePath=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\atlmfc\include;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt;;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\winrt;C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\cppwinrt;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Include\um;
+       Done executing task "SetEnv".
+     1>Done building target "SetCABuildNativeEnvironmentVariables" in project "fxVHS_x64.vcxproj".
+     1>Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+       Task "MakeDir"
+       Done executing task "MakeDir".
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'DynamicLibrary'!='Application' and 'DynamicLibrary'!='DynamicLibrary' and 'DynamicLibrary'!='StaticLibrary').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\'=='' and '' != 'true' and ('v4.0'=='v3.5' or 'v4.0'=='v3.0' or 'v4.0'=='v2.0' )).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\'=='' and '' != 'true' and 'v141'=='v90').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCToolsInstallDir)'=='' and '$(UseEnv)' != 'true') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as (''!='true' and 'C:\Program Files (x86)\Windows Kits\10\'=='' and '' != 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''!='true' and ''=='true').
+       Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+       Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(_IntDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_IntDirFullpath.StartsWith($(Temp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Temp), true, null))' == 'true')) was evaluated as (''!='true' and '' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
+       Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(SpectreMitigation)' != '' and '$(SpectreMitigation)' != 'false' and (('$(_VC_Target_Library_Platform)' == 'OneCore' and !Exists('$(VC_LibraryPath_VC_x86_OneCore)')) or ('$(_VC_Target_Library_Platform)' == 'Desktop' and !Exists('$(VC_LibraryPath_VC_x86_Desktop)')))) was evaluated as ('' != 'true' and 'false' != '' and 'false' != 'false' and (('Desktop' == 'OneCore' and !Exists('C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\onecore\x86')) or ('Desktop' == 'Desktop' and !Exists('C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86')))).
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "PrepareForBuild" in project "fxVHS_x64.vcxproj".
+       Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+     1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ResolveSDKReferences" in project "fxVHS_x64.vcxproj".
+       Target "ResolveSDKReferences" skipped. Previously built successfully.
+     1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+     1>Done building target "ExpandSDKReferences" in project "fxVHS_x64.vcxproj".
+       Target "ResolveNuGetPackageAssets" skipped, due to false condition; ('$(ResolveNuGetPackages)' == 'true' and exists('$(ProjectLockFile)')) was evaluated as ('true' == 'true' and exists('obj\project.assets.json')).
+       Target "ImplicitlyExpandNETStandardFacades" skipped, due to false condition; ('$(ImplicitlyExpandNETStandardFacades)' == 'true') was evaluated as ('' == 'true').
+       Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+       Target "ImplicitlyExpandNETStandardFacades" skipped, due to false condition; ('$(ImplicitlyExpandNETStandardFacades)' == 'true') was evaluated as ('' == 'true').
+     1>Target "_HandlePackageFileConflicts" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+       Using "ResolvePackageFileConflicts" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\\tools\net46\Microsoft.NET.Build.Extensions.Tasks.dll".
+       Task "ResolvePackageFileConflicts"
+       Done executing task "ResolvePackageFileConflicts".
+     1>Done building target "_HandlePackageFileConflicts" in project "fxVHS_x64.vcxproj".
+     1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveReferences" depends on it):
+       Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+     1>Done building target "ResolveAssemblyReferences" in project "fxVHS_x64.vcxproj".
+       Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+       Target "_RemoveZipFileSuggestedRedirect" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' >= '4.7.1' And '$(AllowZipFileRedirect)' != 'true') was evaluated as ('4.0' >= '4.7.1' And '' != 'true').
+       Target "GenerateBindingRedirectsUpdateAppConfig" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true' and Exists('$(_GenerateBindingRedirectsIntermediateAppConfig)')) was evaluated as ('' == 'true' and '' == 'true' and Exists('.\Temp\fxVHS_x64.vdf.config')).
+       Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+     1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "ResolveReferences" depends on it):
+     1>Done building target "AfterResolveReferences" in project "fxVHS_x64.vcxproj".
+       Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+       Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+     1>Target "ResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Build" depends on it):
+     1>Done building target "ResolveReferences" in project "fxVHS_x64.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "PrepareForBuild" skipped. Previously built successfully.
+     1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "Build" depends on it):
+       Task "ReadLinesFromFile"
+       Done executing task "ReadLinesFromFile".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+       Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Touch"
+         Touching ".\Temp\fxVHS_x64.tlog\unsuccessfulbuild".
+       Done executing task "Touch".
+     1>Done building target "InitializeBuildStatus" in project "fxVHS_x64.vcxproj".
+       Target "PrepareProjectReferences" skipped. Previously built successfully.
+     1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "BuildGenerateSources" depends on it):
+       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+     1>Done building target "BuildGenerateSourcesTraverse" in project "fxVHS_x64.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "ResolveReferences" skipped. Previously built successfully.
+     1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+     1>Done building target "BeforeBuildGenerateSources" in project "fxVHS_x64.vcxproj".
+     1>Target "PreBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+       Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+     1>Done building target "PreBuildEvent" in project "fxVHS_x64.vcxproj".
+       Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+       Target "FxExport" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+       Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+     1>Target "_WriteMasmTlogs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "_MASM" depends on it):
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+       Task "WriteLinesToFile"
+       Done executing task "WriteLinesToFile".
+     1>Done building target "_WriteMasmTlogs" in project "fxVHS_x64.vcxproj".
+       Target "PrepareForBuild" skipped. Previously built successfully.
+       Target "InitializeBuildStatus" skipped. Previously built successfully.
+       Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+       Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' and '' != 'true').
+     1>Target "_SelectedFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "_MASM" depends on it):
+     1>Done building target "_SelectedFiles" in project "fxVHS_x64.vcxproj".
+     1>Target "_MASM" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets" from project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+       Building target "_MASM" completely.
+       Output file ".\Temp\asm1.obj" does not exist.
+       Task "Message"
+         Assembling asm\asm1.asm...
+       Done executing task "Message".
+       Initializing task factory "XamlTaskFactory" from assembly "Microsoft.Build.Tasks.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Using "MASM" task from the task factory "XamlTaskFactory".
+       Task "MASM"
+         cmd.exe /C "C:\Users\Billy\AppData\Local\Temp\tmpdfa8ba18bdfb49c6a1adc8a5517fe938.cmd"
+         ml64.exe /c /nologo /Zi /Fo".\Temp\asm1.obj" /W3 /errorReport:prompt  /Taasm\asm1.asm
+         
+         E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64>ml64.exe /c /nologo /Zi /Fo".\Temp\asm1.obj" /W3 /errorReport:prompt  /Taasm\asm1.asm 
+          Assembling: asm\asm1.asm
+     1>asm\asm1.asm(5): error A2006: undefined symbol : src
+     1>asm\asm1.asm(6): error A2006: undefined symbol : src
+     1>asm\asm1.asm(9): error A2206: missing operator in expression
+     1>asm\asm1.asm(11): error A2006: undefined symbol : tb
+     1>asm\asm1.asm(13): error A2206: missing operator in expression
+     1>asm\asm1.asm(15): error A2006: undefined symbol : tg
+     1>asm\asm1.asm(16): error A2206: missing operator in expression
+     1>asm\asm1.asm(18): error A2006: undefined symbol : tr
+     1>asm\asm1.asm(20): error A2006: undefined symbol : yr
+     1>asm\asm1.asm(21): error A2006: undefined symbol : tr
+     1>asm\asm1.asm(23): error A2006: undefined symbol : yg
+     1>asm\asm1.asm(24): error A2006: undefined symbol : tg
+     1>asm\asm1.asm(26): error A2006: undefined symbol : yb
+     1>asm\asm1.asm(27): error A2006: undefined symbol : tb
+     1>asm\asm1.asm(29): error A2206: missing operator in expression
+     1>asm\asm1.asm(34): error A2206: missing operator in expression
+     1>asm\asm1.asm(36): error A2006: undefined symbol : cy
+     1>asm\asm1.asm(38): error A2006: undefined symbol : ir
+     1>asm\asm1.asm(39): error A2006: undefined symbol : tr
+     1>asm\asm1.asm(41): error A2006: undefined symbol : ig
+     1>asm\asm1.asm(42): error A2006: undefined symbol : tg
+     1>asm\asm1.asm(44): error A2006: undefined symbol : ib
+     1>asm\asm1.asm(45): error A2006: undefined symbol : tb
+     1>asm\asm1.asm(48): error A2206: missing operator in expression
+     1>asm\asm1.asm(53): error A2206: missing operator in expression
+     1>asm\asm1.asm(55): error A2006: undefined symbol : ci
+     1>asm\asm1.asm(57): error A2006: undefined symbol : qr
+     1>asm\asm1.asm(58): error A2006: undefined symbol : tr
+     1>asm\asm1.asm(60): error A2006: undefined symbol : qg
+     1>asm\asm1.asm(61): error A2006: undefined symbol : tg
+     1>asm\asm1.asm(63): error A2006: undefined symbol : qb
+     1>asm\asm1.asm(64): error A2006: undefined symbol : tb
+     1>asm\asm1.asm(68): error A2206: missing operator in expression
+     1>asm\asm1.asm(73): error A2206: missing operator in expression
+     1>asm\asm1.asm(75): error A2006: undefined symbol : cq
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo".\Temp\asm1.obj" /W3 /errorReport:prompt  /Taasm\asm1.asm" exited with code 1.
+       Done executing task "MASM" -- FAILED.
+     1>Done building target "_MASM" in project "fxVHS_x64.vcxproj" -- FAILED.
+     1>Done Building Project "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+       "E:\Downloads\~Personal\Visual Studio Projects\Plugins VirtualDub\fxVHS_x64\fxVHS_x64.vcxproj" (Rebuild target) (1) ->
+       (_MASM target) -> 
+         asm\asm1.asm(5): error A2006: undefined symbol : src
+         asm\asm1.asm(6): error A2006: undefined symbol : src
+         asm\asm1.asm(9): error A2206: missing operator in expression
+         asm\asm1.asm(11): error A2006: undefined symbol : tb
+         asm\asm1.asm(13): error A2206: missing operator in expression
+         asm\asm1.asm(15): error A2006: undefined symbol : tg
+         asm\asm1.asm(16): error A2206: missing operator in expression
+         asm\asm1.asm(18): error A2006: undefined symbol : tr
+         asm\asm1.asm(20): error A2006: undefined symbol : yr
+         asm\asm1.asm(21): error A2006: undefined symbol : tr
+         asm\asm1.asm(23): error A2006: undefined symbol : yg
+         asm\asm1.asm(24): error A2006: undefined symbol : tg
+         asm\asm1.asm(26): error A2006: undefined symbol : yb
+         asm\asm1.asm(27): error A2006: undefined symbol : tb
+         asm\asm1.asm(29): error A2206: missing operator in expression
+         asm\asm1.asm(34): error A2206: missing operator in expression
+         asm\asm1.asm(36): error A2006: undefined symbol : cy
+         asm\asm1.asm(38): error A2006: undefined symbol : ir
+         asm\asm1.asm(39): error A2006: undefined symbol : tr
+         asm\asm1.asm(41): error A2006: undefined symbol : ig
+         asm\asm1.asm(42): error A2006: undefined symbol : tg
+         asm\asm1.asm(44): error A2006: undefined symbol : ib
+         asm\asm1.asm(45): error A2006: undefined symbol : tb
+         asm\asm1.asm(48): error A2206: missing operator in expression
+         asm\asm1.asm(53): error A2206: missing operator in expression
+         asm\asm1.asm(55): error A2006: undefined symbol : ci
+         asm\asm1.asm(57): error A2006: undefined symbol : qr
+         asm\asm1.asm(58): error A2006: undefined symbol : tr
+         asm\asm1.asm(60): error A2006: undefined symbol : qg
+         asm\asm1.asm(61): error A2006: undefined symbol : tg
+         asm\asm1.asm(63): error A2006: undefined symbol : qb
+         asm\asm1.asm(64): error A2006: undefined symbol : tb
+         asm\asm1.asm(68): error A2206: missing operator in expression
+         asm\asm1.asm(73): error A2206: missing operator in expression
+         asm\asm1.asm(75): error A2006: undefined symbol : cq
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\BuildCustomizations\masm.targets(69,5): error MSB3721: The command "ml64.exe /c /nologo /Zi /Fo".\Temp\asm1.obj" /W3 /errorReport:prompt  /Taasm\asm1.asm" exited with code 1.
+
+    0 Warning(s)
+    36 Error(s)
+
+Time Elapsed 00:00:00.21

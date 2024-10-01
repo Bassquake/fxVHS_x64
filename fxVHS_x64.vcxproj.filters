@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c79d17a2-eb85-466c-a83e-5c48b8c153c1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ad070dc5-9c1c-4b27-9ed2-63854059cf30}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0d4a0b78-5a8f-4e7a-a484-7a2bf37ef3f5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Config.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptInterpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptValue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VBitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fxVHS.vdf" />
+    <None Include="Help.html" />
+    <None Include="UpgradeLog.htm" />
+    <None Include="fxVHS_x64.sln" />
+    <None Include="fxVHS_x64.vcproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="fxvhs1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="asm\asm1.asm" />
+    <MASM Include="asm\asm2.asm" />
+    <MASM Include="asm\asm3.asm" />
+    <MASM Include="asm\asm4.asm" />
+    <MASM Include="asm\asm5.asm" />
+    <MASM Include="asm\asm6.asm" />
+    <MASM Include="asm\asm7.asm" />
+    <MASM Include="asm\asm8.asm" />
+    <MASM Include="asm\asm9.asm" />
+    <MASM Include="asm\asm10.asm" />
+    <MASM Include="asm\asm11.asm" />
+    <MASM Include="asm\asm12.asm" />
+    <MASM Include="asm\asm13.asm" />
+    <MASM Include="asm\asm14.asm" />
+  </ItemGroup>
+</Project>
